@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Disappearing People Project</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Weslen Lakins" />
+
+		<!-- Import the webpage's stylesheet -->
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<h1>Interactive Visual Modification Project</h1>
+
+		<header class="note">
+			<h2>Exploring real-time visual modifications in web browsers</h2>
+		</header>
+
+		<h2>How to use</h2>
+		<p>
+			Please wait for the visual modification engine to initialize. Interactive
+			demonstrations will become available once the system is ready.
+		</p>
+		<p>
+			Explore the capabilities of our technology through this illustrative
+			example. It showcases the potential of real-time visual modifications
+			directly in your web browser.
+		</p>
+		<!-- Consider replacing the direct iframe with a more generic placeholder or description -->
+
+		<section id="demos" class="invisible">
+			<h2>Demo: Interactive Webcam Modification</h2>
+			<p>
+				Engage with this feature using your webcam. Position yourself and
+				observe the dynamic changes on screen.
+			</p>
+
+			<div id="liveView" class="webcam">
+				<button id="webcamButton">Enable Webcam</button>
+				<video id="webcam" autoplay></video>
+			</div>
+		</section>
+
+		<!-- Import TensorFlow.js library -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"
+			type="text/javascript"></script>
+
+		<!-- Load the bodypix model to recognize body parts in images -->
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+
+		<!-- Import the page's JavaScript to do some stuff -->
+		<script src="/script.js" defer></script>
+	</body>
+</html>
